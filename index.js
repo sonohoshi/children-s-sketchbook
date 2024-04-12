@@ -73,7 +73,7 @@ async function wapper() {
     }
 
     let arr = new Array();
-    let levels = Array.from({length: 50}, (_, i) => i + 1);
+    let levels = [47, 48, ];
     for(let i = 0; i < 15; i++){
       arr.push(...(levels.map(level => [i, level])));
     }
@@ -93,8 +93,7 @@ async function wapper() {
 
     const s = (await Promise.all(promises))
       .flat()
-      .sort((a, b) => b.point - a.point)
-      .slice(0, 50);
+      .sort((a, b) => b.point - a.point);
     console.log({ s })
     const avg = s.reduce((acc, cur) => acc + cur.point, 0) / 50;
   
