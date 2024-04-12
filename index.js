@@ -1,4 +1,4 @@
-async function wapper() {
+async function wapper(...levels) {
     let domparser = new DOMParser();
 
     const VERSION = "v0.2 by kimsm";
@@ -73,7 +73,6 @@ async function wapper() {
     }
 
     let arr = new Array();
-    let levels = [47, 48, ];
     for(let i = 0; i < 15; i++){
       arr.push(...(levels.map(level => [i, level])));
     }
@@ -95,112 +94,6 @@ async function wapper() {
       .flat()
       .sort((a, b) => b.point - a.point);
     console.log({ s })
-    const avg = s.reduce((acc, cur) => acc + cur.point, 0) / 50;
-  
-    const divEl = document.createElement("div");
-    divEl.id = "pokkura";
-    divEl.innerHTML = `
-    <style scoped>
-    .pokura {
-      display: flex;
-      justify-content: center;
-    }
-    .pokuraTable {
-      background-color: #feffb7;
-      border-collapse: collapse;
-    }
-    .pokuraTable:first-child {
-      margin-right: 10px;
-    }
-    .pokuraTable tr {
-      border-bottom: 2px solid #d82f66;
-    }
-    .pokuraTable th {
-      padding: 4px;
-    }
-    .pokuraTable td {
-      padding: 0 4px;
-    }
-    .pokuraTable td img {
-      vertical-align: middle;
-    }
-    .profileTable {
-      margin: 10px auto;
-      font-size: 14px;
-    }
-    .profileTable td {
-      padding: 5px;
-    }
-    .profileTable td:first-child {
-      font-weight: bold;
-    }
-    .footnote {
-      font-size: 10px;
-      margin: 8px auto;
-      color: gray;
-      text-align: center;
-    }
-    @media (max-width: 768px) {
-      .pokura {
-        flex-direction: column;
-      }
-      .pokuraTable {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      .profileTable {
-        width: auto;
-      }
-      .pokuraTable th:first-child,td:first-child {
-        min-width: 20px;
-      }
-      .pokuraTable th:nth-child(4),td:nth-child(4) {
-        min-width: 40px;
-      }
-      .pokuraTable th:nth-child(5),td:nth-child(5) {
-        min-width: 40px;
-      }
-      .pokuraTable th:nth-child(6),td:nth-child(6) {
-        min-width: 50px;
-      }
-    }
-    </style>
-    <table class="pokuraTable profileTable"><tr><td>플레이어 명</td><td>${player}</td></tr><tr><td>팝 클래스</td><td>${(
-        Math.floor(avg * 100) / 100
-      ).toFixed(2)}</td></tr><tr><td>+0.01까지 앞으로</td><td>${Math.ceil(
-        ((1 - ((avg * 100) % 1)) * 5440 * 50) / 100
-      )}</td></tr></table>
-    <div class="pokura">
-    <table class="pokuraTable">
-      <tr><th>LV</th><th>장르</th><th>곡명</th><th>점수</th><th>메달</th><th>팝 클래스</th></tr>
-      ${s
-        .slice(0, 25)
-        .map(
-          (x) =>
-            `<tr><td>${x.level}</td><td>${x.genre}</td><td>${x.song}</td><td>${x.score
-            }</td><td><img src="${MEDAL_IMAGE_URL}/meda_${x.medal
-            }.png"></td><td>${x.point.toFixed(2)}</td></tr>`
-        )
-        .join("")}
-    </table>
-    <table class="pokuraTable">
-      <tr><th>LV</th><th>장르</th><th>곡명</th><th>점수</th><th>메달</th><th>팝 클래스</th></tr>
-      ${s
-        .slice(25)
-        .map(
-          (x) =>
-            `<tr><td>${x.level}</td><td>${x.genre}</td><td>${x.song}</td><td>${x.score
-            }</td><td><img src="${MEDAL_IMAGE_URL}/meda_${x.medal
-            }.png"></td><td>${x.point.toFixed(2)}</td></tr>`
-        )
-        .join("")}
-    </table>
-    </div>
-    <div class="footnote">팝 클래스 스크립트${VERSION}</div>
-    `;
-
-    document.body.innerHTML = "";
-    document.body.appendChild(divEl);
 }
 
-wapper();
+wapper(48, 49);
