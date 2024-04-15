@@ -60,26 +60,13 @@ async function wapper(...levels) {
 }
 
 async function render(){
-  document.innerHTML = `
-    <body><canvas id="myCanvas" width="100" height="100"></canvas></body>
+  document.body.innerHTML = `
+    <body>
+    <img
+  class="fit-picture"
+  src="https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de987fa11d028319b15983a4fe17b29dcc6f7288b8246fae44e12ec30598b2b48f72e9a1b7e4fdc40d2df309c0aae079c14b8c5573ae8885272fe1cd42ebb36ab"/>
+    </body>
     `;
-
-    var canvas = document.getElementById('myCanvas');
-    var ctx = canvas.getContext('2d');
-    var baseImage = new Image();
-    baseImage.src = 'https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de987fa11d028319b15983a4fe17b29dcc6f7288b8246fae44e12ec30598b2b48f72e9a1b7e4fdc40d2df309c0aae079c14b8c5573ae8885272fe1cd42ebb36ab';
-    baseImage.onload = function() {
-        // 캔버스 크기를 이미지 크기에 맞게 조정
-        canvas.width = baseImage.width;
-        canvas.height = baseImage.height;
-
-        // 원본 이미지를 캔버스에 그립니다.
-        ctx.drawImage(baseImage, 0, 0);
-
-        // 스티커 이미지 추가
-        addStickers();
-    };
-    // 원본 이미지 경로
 }
 
 wapper(48, 49).then(_ => render());
