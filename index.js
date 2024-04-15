@@ -64,7 +64,7 @@ async function render(){
     <body>
     <img
   class="fit-picture"
-  src="https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de987fa11d028319b15983a4fe17b29dcc6f7288b8246fae44e12ec30598b2b48f72e9a1b7e4fdc40d2df309c0aae079c14b8c5573ae8885272fe1cd42ebb36ab"/>
+  src="https://github-production-user-asset-6210df.s3.amazonaws.com/48484989/322400510-63f83a1e-56a4-4f13-8d2d-b9674e0accfc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240415%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240415T080421Z&X-Amz-Expires=300&X-Amz-Signature=87af1d19e1b9eab4bee0138f1f9682dabdac76fc90d7c5ee7fcd6d32d7e793bb&X-Amz-SignedHeaders=host&actor_id=48484989&key_id=0&repo_id=785611895"/>
     </body>
     `;
 }
