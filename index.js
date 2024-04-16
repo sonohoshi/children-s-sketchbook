@@ -28,13 +28,11 @@ async function wapper(...levels) {
             .map((li) => [
               li.children[3].textContent,
               li.children[3].firstChild.src,
-              li.firstElementChild.lastElementChild.textContent,
               li.firstElementChild.firstElementChild.textContent,
             ])
-            .map(([score, medal, genre, song]) => {
+            .map(([score, medal, song]) => {
               return {
                 song,
-                genre,
                 score,
                 medal,
                 level,
@@ -77,10 +75,9 @@ async function render49(playData){
   const ctx = canvas.getContext("2d");
   var img = new Image();
   img.onload = function(){
-    ctx.drawImage(img, 0, 0)
+    ctx.drawImage(img, 178, 2278, 40, 40)
   }
-  img.src = ("https://eacache.s.konaminet.jp/game/popn/unilab/images/p/common/medal/meda_none.png");
+  img.src = playData.find(d => d.song == "Sky High").medal;
 }
-
 
 wapper(49).then(data => render49(data));
