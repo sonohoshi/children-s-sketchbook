@@ -152,27 +152,27 @@ IX,684,2278
 
   document.body.innerHTML = `
    <body>
-   <style scoped>
-  canvas {
-    background-repeat: no-repeat;
-    background: url("https://rawcdn.githack.com/sonohoshi/children-s-sketchbook/96906144d80d0dc758520853a421eee62d10777b/img/49table.png");
-  }
-  </style>
    <canvas id="canvas" width="1500" height="2381">
   </canvas>
   </body>
     `;
   const canvas = document.getElementById("canvas");
-  playData.forEach(element => {
-    console.log(`try draw ${element.song}`);
-    var ctx = canvas.getContext("2d");
-    var xy = m.get(element.song);
-    var img = new Image();
-    img.onload = function () {
-      ctx.drawImage(img, xy.x, xy.y, 40, 40)
-    }
-    img.src = element.medal;
-  });
+  const bg = new Image();
+  bg.src = "https://rawcdn.githack.com/sonohoshi/children-s-sketchbook/96906144d80d0dc758520853a421eee62d10777b/img/49table.png";
+  bg.crossOrigin = 'anonymous';
+  bg.onload = function () {
+    canvas.getContext("2d").drawImage(bg, 0, 0)
+    playData.forEach(element => {
+      console.log(`try draw ${element.song}`);
+      var ctx = canvas.getContext("2d");
+      var xy = m.get(element.song);
+      var img = new Image();
+      img.onload = function () {
+        ctx.drawImage(img, xy.x, xy.y, 40, 40)
+      }
+      img.src = element.medal;
+    });
+  }
 }
 
 crawl(49).then(data => render49(data));
