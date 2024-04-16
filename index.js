@@ -106,7 +106,7 @@ Triple Cross,430,1111
 Ubertreffen,937,1029
 uen,937,575
 Unknown Region,430,1193
-Vinculum stellarum,684,1462
+Vinculum stellarum,430,1462
 virkatoの主題によるperson09風超絶技巧変奏曲,937,1111
 VOLAQUAS,178,1625
 XROSS INFECTION,178,1543
