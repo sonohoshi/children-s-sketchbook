@@ -25,7 +25,7 @@ async function crawl(...levels) {
             .map((li) => [
               li.children[3].textContent,
               li.children[3].firstChild.src,
-              `${li.firstElementChild.firstElementChild.textContent}${li.firstElementChild.firstElementChild.href.includes("0a42H9i6WzV2K4X3vTbFlA") && li.firstElementChild.firstElementChild.textContent == "Popperz Chronicle" ? "U":""}`,
+              `${li.firstElementChild.firstElementChild.textContent}${li.firstElementChild.firstElementChild.href.includes("0a42H9i6WzV2K4X3vTbFlA") && li.firstElementChild.firstElementChild.textContent == "Popperz Chronicle" ? "":"U"}`,
             ])
             .map(([score, medal, song]) => {
               return {
