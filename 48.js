@@ -225,7 +225,7 @@ async function render48(playData) {
       posY: presetY[10],
     },
     {
-      Song: "Hexer",
+      song: "Hexer",
       posX: presetX[4],
       posY: presetY[19],
     },
