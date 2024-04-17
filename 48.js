@@ -831,7 +831,7 @@ async function render48(playData) {
     const canvas = document.getElementById("canvas");
     playData.forEach((element) => {
       var ctx = canvas.getContext("2d");
-      var xy = songData.find((e) => e.song == element.song);
+      var xy = songData.find((e) => e.song.trim() == element.song.trim());
       if (xy) {
         var img = new Image();
         img.onload = function () {
