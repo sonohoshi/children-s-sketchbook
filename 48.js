@@ -610,7 +610,7 @@ async function render48(playData) {
       posY: presetY[23],
     },
     {
-      song: "ちくわパフェだよ☆CKP (Yvya Remix)",
+      song: "ちくわパフェだよ☆ＣＫＰ (Yvya Remix)",
       posX: presetX[0],
       posY: presetY[20],
     },
