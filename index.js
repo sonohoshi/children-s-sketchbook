@@ -4,9 +4,6 @@ async function crawl(...levels) {
   console.log("popn data crawler running.\nPLZ wait a minute...");
 
   const PLAY_DATA_URL = "https://p.eagate.573.jp/game/popn/unilab/playdata";
-  const MEDAL_IMAGE_URL =
-    "https://eacache.s.konaminet.jp/game/popn/unilab/images/p/common/medal";
-
   function resToText(res) {
     return res.arrayBuffer().then((buffer) => {
       if (res.headers.get("Content-Type").includes("UTF-8")) {
