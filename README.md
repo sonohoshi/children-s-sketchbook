@@ -17,7 +17,7 @@ javascript: void !function(e){var t=e.createElement("script");t.type="text/javas
 
 ⬇ 이건 50레벨
 ```
-javascript: void !function(e){var t=e.createElement("script");t.type="text/javascript",t.src="///rawcdn.githack.com/sonohoshi/children-s-sketchbook/d10bfec2aac46cbb3e6916d14756cc4d11475937/50.js",e.head.appendChild(t)}(document);
+javascript: void !function(e){var t=e.createElement("script");t.type="text/javascript",t.src="///rawcdn.githack.com/sonohoshi/children-s-sketchbook/d02421baa070081a0c62dd4972071e6b124854c2/50.js",e.head.appendChild(t)}(document);
 ```
 
 <img width="713" alt="스크린샷 2024-04-17 오전 1 24 50" src="https://github.com/sonohoshi/children-s-sketchbook/assets/48484989/16247018-adc1-4f73-9daa-8227515c18ef">
