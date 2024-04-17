@@ -12,7 +12,7 @@ https://twitter.com/popnmusic10 에서 만드는 팝픈뮤직 서열표의 메�
 
 ⬇ 이건 48레벨, thx to @onehunnitconst 
 ```
-javascript: void !function(e){var t=e.createElement("script");t.type="text/javascript",t.src="///rawcdn.githack.com/sonohoshi/children-s-sketchbook/dbef3b786e275b2134028791351b813c424e059d/48.js",e.head.appendChild(t)}(document);
+javascript: void !function(e){var t=e.createElement("script");t.type="text/javascript",t.src="///rawcdn.githack.com/sonohoshi/children-s-sketchbook/527ea1bc4ed0fb052052ed047c5c6fddff516f07/48.js",e.head.appendChild(t)}(document);
 ```
 
 ⬇ 이건 49레벨
