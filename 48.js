@@ -181,8 +181,8 @@ async function render48(playData) {
     },
     {
       song: "FLOWER",
-      posX: presetY[25],
-      posY: presetX[4],
+      posX: presetX[4],
+      posY: presetY[25],
     },
     {
       song: "forever under construction",
@@ -210,7 +210,7 @@ async function render48(playData) {
       posY: presetY[17],
     },
     {
-      song: "good night, mommy",
+      song: "good night , mommy",
       posX: presetX[4],
       posY: presetY[21],
     },
@@ -272,7 +272,7 @@ async function render48(playData) {
     {
       song: "Life is beautiful",
       posX: presetX[4],
-      posY: presetY[15],
+      posY: presetY[16],
     },
     {
       song: "Little prayer",
