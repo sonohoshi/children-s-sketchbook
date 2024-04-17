@@ -25,7 +25,7 @@ async function crawl(...levels) {
             .map((li) => [
               li.children[3].textContent,
               li.children[3].firstChild.src,
-              `${li.firstElementChild.firstElementChild.textContent}${li.firstElementChild.firstElementChild.href.includes("0a42H9i6WzV2K4X3vTbFlA") && li.firstElementChild.firstElementChild.textContent == "Popperz Chronicle" ? "":"U"}`,
+              `${li.firstElementChild.firstElementChild.textContent}${li.firstElementChild.firstElementChild.href.indexof("0a42H9i6WzV2K4X3vTbFlA") == -1 && li.firstElementChild.firstElementChild.textContent == "Popperz Chronicle" ? "U":""}`,
             ])
             .map(([score, medal, song]) => {
               return {
@@ -72,7 +72,7 @@ perditus†paradisus,678,693
 Popperz ChronicleU,1095,471
 Popperz Chronicle,678,1118
 virkatoの主題によるperson09風超絶技巧変奏曲,263,1547
-音楽,678,896
+音楽,678,896896q
 シュレーディンガーの猫,263,1997
 序,678,1344
 少年は空を辿る,263,1344
