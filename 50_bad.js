@@ -229,6 +229,12 @@ function Drawer(level) {
       posX: this.presetX[0],
       posY: this.presetY[2]
     },
+    {
+      id: 'K6j4Es9mkGuJl14iixwg0w%3D%3D',
+      song: 'F/S',
+      posX: this.presetX[2],
+      posY: this.presetY[2]
+    }
   ];
 }
 
@@ -257,8 +263,13 @@ Drawer.prototype.drawMedals = function (playData, songData) {
       var img = new Image();
       img.onload = function () {
         ctx.drawImage(img, xy.posX, xy.posY, 50, 50)
-        ctx.font = "32px sans-serif";
-        ctx.fillText(element.bads, xy.posX + 195, xy.posY - 32.5);
+        ctx.font = "bold 36px sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillStyle = "white";
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 5;
+        ctx.strokeText(element.bads ?? '-', xy.posX + 220, xy.posY - 30);
+        ctx.fillText(element.bads ?? '-', xy.posX + 220, xy.posY - 30);
       }
       img.src = element.medal;
     }
