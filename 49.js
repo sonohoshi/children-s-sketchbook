@@ -59,88 +59,88 @@ async function render49(playData) {
     console.log(`m[${key}] = ${value.x}, ${value.y}`);
   }
 
-  const csv49 = `24/7 Popperz,226,418
-BabeL ～Next Story～,178,575
-Black Emperor,937,1809
-Bossa Gabba,937,1543
-Blue River,178,947
-Candy Crime Toe Shoes,178,1193
-CHERNOBOG,430,1729
-DIAVOLO,1237,1030
-Eine Haube ～聖地の果てにあるもの～,937,1996
-Elemental Creation,430,1298
-Festum Duodecimum!,1237,1462
-GALAXY FOREST 11.6&12 ,1237,2078
-Geiselhaus,430,1543
-Hell? or Heaven?,1237,1111
-INF-B《L-aste-R》,178,1462
-Innocence,178,1029
-I'm on Fire,1237,390
-K∀MUY,430,575
-Lachryma《Re:Queen’M》,684,1380
-Last Twilight,684,1996
-Line Times,1237,472
-ma plume,684,1193
-MADSPEED狂信道,684,575
-Mecha Kawa Breaker!!,897,418
-moon_child,684,1729
-neu,684,760
-ΩVERSOUL,684,1298
-perditus†paradisus,684,1625
-Prey,178,2078
-QuoN,430,1809
-Remain,684,1462
-RINИE,937,947
-SailRen,430,2278
-Satan,1237,2162
-Sky High,178,2278
-StrayedCatz,937,1462
-the Chameleon,684,2078
-Timepiece phase II,430,2078
-trideca,178,1996
-Triple Counter,684,947
-Triple Cross,430,1111
-Ubertreffen,937,1029
-uen,937,575
-Unknown Region,430,1193
-Vinculum stellarum,430,1462
-virkatoの主題によるperson09風超絶技巧変奏曲,937,1111
-VOLAQUAS,178,1625
-XROSS INFECTION,178,1543
-zeeros,937,1729
-ZETA～素数の世界と超越者～,937,760
-Zirkfied,430,760
-アストライアの双皿,937,2078
-想い出をありがとう,1237,1378
-悲しいね,1237,1997
-C18H27NO3,937,1380
-激走！！ヤング☆ダンプ！,178,760
-限界食堂,430,1029
-恋歌疾風！かるたクイーンいろは,178,1729
-最小三倍完全数,684,1029
-ジオメトリック∮ティーパーティー,430,947
-雫,937,1298
-鎬,684,1543
-シャムシールの舞,178,2162
-ちくわパフェだよ☆ＣＫＰ,430,842
-終末を追う者,430,1625
-生命の焔纏いて,178,1298
-世界の果てに約束の凱歌を,684,1111
-世界の果てに約束の凱歌を -Advent-,178,842
-葬送のエウロパ,430,1380
-天空の夜明け,178,1809
-IX,684,2278
-西馬込交通曲,562,418
-バッドエンド・シンドローム,178,1891
-ピアノ独奏無言歌 "灰燼",178,657
-ブタパンチのテーマ,684,1809
-めうめうぺったんたん！！,684,842
-未完成ノ蒸氣驅動乙女,430,1996
-明滅の果てに,430,1891
-粋 -IKI-,178,1380
-彼岸花,178,1111
-pump up dA CORE,937,842
-天泣,937,1193`
+  const csv49 = `24/7 Popperz,223,425
+BabeL ～Next Story～,174,583
+Black Emperor,937,1825
+Bossa Gabba,937,1555
+Blue River,174,955
+Candy Crime Toe Shoes,174,1203
+CHERNOBOG,427,1740
+DIAVOLO,1237,1039
+Eine Haube ～聖地の果てにあるもの～,937,2010
+Elemental Creation,427,1308
+Festum Duodecimum!,1237,1472
+GALAXY FOREST 11.6&12 ,1237,2092
+Geiselhaus,427,1555
+Hell? or Heaven?,1237,1121
+INF-B《L-aste-R》,174,1472
+Innocence,174,1039
+I'm on Fire,1237,395
+K∀MUY,427,583
+Lachryma《Re:Queen’M》,682,1390
+Last Twilight,682,2010
+Line Times,1237,477
+ma plume,682,1203
+MADSPEED狂信道,682,583
+Mecha Kawa Breaker!!,894,425
+moon_child,682,1740
+neu,682,765
+ΩVERSOUL,682,1308
+perditus†paradisus,682,1638
+Prey,174,2092
+QuoN,427,1825
+Remain,682,1472
+RINИE,937,955
+SailRen,427,2292
+Satan,1237,2175
+Sky High,174,2292
+StrayedCatz,937,1472
+the Chameleon,682,2092
+Timepiece phase II,427,2092
+trideca,174,2010
+Triple Counter,682,955
+Triple Cross,427,1121
+Ubertreffen,937,1039
+uen,937,583
+Unknown Region,427,1203
+Vinculum stellarum,427,1472
+virkatoの主題によるperson09風超絶技巧変奏曲,937,1121
+VOLAQUAS,174,1638
+XROSS INFECTION,174,1555
+zeeros,937,1740
+ZETA～素数の世界と超越者～,937,765
+Zirkfied,427,765
+アストライアの双皿,937,2092
+想い出をありがとう,1237,1390
+悲しいね,1237,2010
+C18H27NO3,937,1390
+激走！！ヤング☆ダンプ！,174,765
+限界食堂,427,1039
+恋歌疾風！かるたクイーンいろは,174,1740
+最小三倍完全数,682,1039
+ジオメトリック∮ティーパーティー,427,955
+雫,937,1308
+鎬,682,1555
+シャムシールの舞,174,2175
+ちくわパフェだよ☆ＣＫＰ,427,847
+終末を追う者,427,1638
+生命の焔纏いて,174,1308
+世界の果てに約束の凱歌を,682,1121
+世界の果てに約束の凱歌を -Advent-,174,847
+葬送のエウロパ,427,1390
+天空の夜明け,174,1825
+IX,682,2292
+西馬込交通曲,559,425
+バッドエンド・シンドローム,174,1906
+ピアノ独奏無言歌 "灰燼",174,662
+ブタパンチのテーマ,682,1825
+めうめうぺったんたん！！,682,847
+未完成ノ蒸氣驅動乙女,427,2010
+明滅の果てに,427,1906
+粋 -IKI-,174,1390
+彼岸花,174,1121
+pump up dA CORE,937,847
+天泣,937,1203`
   let newCsv = csv49.trim();
   const m = new Map();
   newCsv.split('\n').map(line => {
