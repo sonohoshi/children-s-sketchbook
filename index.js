@@ -36,7 +36,7 @@ h4 {
 <form action="javascript: void !function(e){var t=e.createElement('script');t.type='text/javascript',t.src='///rawcdn.githack.com/sonohoshi/children-s-sketchbook/84f0cfe890f21bef92ca397746a6bed7d14d495b/48.js',e.head.appendChild(t)}(document);">
     <input type="submit" value="48" />
 </form>
-<form action="javascript: void !function(e){var t=e.createElement('script');t.type='text/javascript',t.src='///rawcdn.githack.com/sonohoshi/children-s-sketchbook/84f0cfe890f21bef92ca397746a6bed7d14d495b/49.js',e.head.appendChild(t)}(document);">
+<form action="javascript: void !function(e){var t=e.createElement('script');t.type='text/javascript',t.src='///rawcdn.githack.com/sonohoshi/children-s-sketchbook/1daa5e221a62bc59e2c44020721c16ed3d404ac2/49.js',e.head.appendChild(t)}(document);">
     <input type="submit" value="49" />
 </form>
 <form action="javascript: void !function(e){var t=e.createElement('script');t.type='text/javascript',t.src='///rawcdn.githack.com/sonohoshi/children-s-sketchbook/84f0cfe890f21bef92ca397746a6bed7d14d495b/50.js',e.head.appendChild(t)}(document);">
