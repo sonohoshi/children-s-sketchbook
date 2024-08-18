@@ -138,7 +138,9 @@ IX,684,2278
 未完成ノ蒸氣驅動乙女,430,1996
 明滅の果てに,430,1891
 粋 -IKI-,178,1380
-彼岸花,178,1111`
+彼岸花,178,1111
+pump up dA CORE,937,842
+天泣,937,1193`
   let newCsv = csv49.trim();
   const m = new Map();
   newCsv.split('\n').map(line => {
