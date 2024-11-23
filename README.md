@@ -16,7 +16,7 @@ javascript: void !function(e){var t=e.createElement("script");t.type="text/javas
 
 <img width="713" alt="스크린샷 2024-04-17 오전 1 24 50" src="https://github.com/sonohoshi/children-s-sketchbook/assets/48484989/16247018-adc1-4f73-9daa-8227515c18ef">
 
-2. [팝픈 웹페이지](https://p.eagate.573.jp/game/popn/jamfizz/)에서 로그인 한 뒤, 북마크를 클릭합니다.
+2. [팝픈 웹페이지](https://p.eagate.573.jp/game/popn/jamfizz/playdata/index.html)에서 로그인 한 뒤, 북마크를 클릭합니다.
 <img width="674" alt="스크린샷 2024-04-18 오전 1 00 04" src="https://github.com/sonohoshi/children-s-sketchbook/assets/48484989/485e5155-dd5c-45cc-aa82-d79fd404e18f">
 
 3. 낙서장을 만들길 원하는 레벨의 버튼을 클릭합니다.
