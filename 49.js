@@ -3,7 +3,7 @@ async function crawl(...levels) {
 
   console.log("popn data crawler running.\nPLZ wait a minute...");
 
-  const PLAY_DATA_URL = "https://p.eagate.573.jp/game/popn/unilab/playdata";
+  const PLAY_DATA_URL = "https://p.eagate.573.jp/game/popn/jamfizz/playdata";
   function resToText(res) {
     return res.arrayBuffer().then((buffer) => {
       if (res.headers.get("Content-Type").includes("UTF-8")) {
@@ -23,6 +23,7 @@ async function crawl(...levels) {
         return Array.from(lis)
           .filter((li) => li.firstElementChild.className.startsWith("col"))
           .map((li) => [
+            // 순서대로 점수 메달 곡제목
             li.children[3].textContent,
             li.children[3].firstChild.src,
             li.firstElementChild.firstElementChild.textContent,
@@ -44,7 +45,7 @@ async function crawl(...levels) {
   }
 
   const promises = arr.map(([page, level]) =>
-    whatever(`${PLAY_DATA_URL}/mu_lv.html?page=${page}&level=${level}`, level)
+    whatever(`${PLAY_DATA_URL}/mu_lv.html?page=${page}&version=0&category=0&keyword=&lv=${level}&sort=none&sort_type=none`, level)
   );
 
   const s = (await Promise.all(promises))
@@ -59,88 +60,89 @@ async function render49(playData) {
     console.log(`m[${key}] = ${value.x}, ${value.y}`);
   }
 
-  const csv49 = `24/7 Popperz,223,425
-BabeL ～Next Story～,174,583
-Black Emperor,937,1825
-Bossa Gabba,937,1555
-Blue River,174,955
-Candy Crime Toe Shoes,174,1203
-CHERNOBOG,427,1740
-DIAVOLO,1237,1039
-Eine Haube ～聖地の果てにあるもの～,937,2010
-Elemental Creation,427,1308
-Festum Duodecimum!,1237,1472
-GALAXY FOREST 11.6&12 ,1237,2092
-Geiselhaus,427,1555
-Hell? or Heaven?,1237,1121
-INF-B《L-aste-R》,174,1472
-Innocence,174,1039
+  const csv49 = `24/7 Popperz,300,425
+BabeL ～Next Story～,180,580
+Black Emperor,937,1895
+Bossa Gabba,937,1628
+Blue River,180,950
+Candy Crime Toe Shoes,180,1196
+CHERNOBOG,432,1812
+DIAVOLO,1237,1032
+Eine Haube ～聖地の果てにあるもの～,937,2080
+Elemental Creation,432,1383
+Festum Duodecimum!,1237,1547
+GALAXY FOREST 11.6&12,1237,2163
+Geiselhaus,432,1628
+Hades Doll,180,1278
+Hell? or Heaven?,1237,1115
+INF-B《L-aste-R》,180,1547
+Innocence,180,1032
 I'm on Fire,1237,395
-K∀MUY,427,583
-Lachryma《Re:Queen’M》,682,1390
-Last Twilight,682,2010
+K∀MUY,432,580
+Lachryma《Re:Queen’M》,685,1465
+Last Twilight,685,2080
 Line Times,1237,477
-ma plume,682,1203
-MADSPEED狂信道,682,583
-Mecha Kawa Breaker!!,894,425
-moon_child,682,1740
-neu,682,765
-ΩVERSOUL,682,1308
-perditus†paradisus,682,1638
-Prey,174,2092
-QuoN,427,1825
-Remain,682,1472
-RINИE,937,955
-SailRen,427,2292
-Satan,1237,2175
-Sky High,174,2292
-StrayedCatz,937,1472
-the Chameleon,682,2092
-Timepiece phase II,427,2092
-trideca,174,2010
-Triple Counter,682,955
-Triple Cross,427,1121
-Ubertreffen,937,1039
-uen,937,583
-Unknown Region,427,1203
-Vinculum stellarum,427,1472
-virkatoの主題によるperson09風超絶技巧変奏曲,937,1121
-VOLAQUAS,174,1638
-XROSS INFECTION,174,1555
-zeeros,937,1740
+ma plume,685,1196
+MADSPEED狂信道,685,580
+Megalara Garuda,937,1708
+moon_child,685,1812
+neu,685,765
+ΩVERSOUL,685,1383
+perditus†paradisus,685,1708
+Prey,180,2163
+QuoN,432,1895
+Remain,685,1547
+RINИE,937,950
+SailRen,432,2362
+Satan,1237,2245
+Sky High,180,2362
+StrayedCatz,937,1547
+the Chameleon,685,2163
+Timepiece phase II,432,2163
+trideca,180,2080
+Triple Counter,685,950
+Triple Cross,432,1115
+Ubertreffen,937,1032
+uen,937,580
+Unknown Region,432,1196
+Vinculum stellarum,432,1547
+virkatoの主題によるperson09風超絶技巧変奏曲,937,1115
+VOLAQUAS,180,1708
+XROSS INFECTION,180,1628
+zeeros,937,1812
 ZETA～素数の世界と超越者～,937,765
-Zirkfied,427,765
-アストライアの双皿,937,2092
-想い出をありがとう,1237,1390
-悲しいね,1237,2010
-C18H27NO3,937,1390
-激走！！ヤング☆ダンプ！,174,765
-限界食堂,427,1039
-恋歌疾風！かるたクイーンいろは,174,1740
-最小三倍完全数,682,1039
-ジオメトリック∮ティーパーティー,427,955
-雫,937,1308
-鎬,682,1555
-シャムシールの舞,174,2175
-ちくわパフェだよ☆ＣＫＰ,427,847
-終末を追う者,427,1638
-生命の焔纏いて,174,1308
-世界の果てに約束の凱歌を,682,1121
-世界の果てに約束の凱歌を -Advent-,174,847
-葬送のエウロパ,427,1390
-天空の夜明け,174,1825
-IX,682,2292
-西馬込交通曲,559,425
-バッドエンド・シンドローム,174,1906
-ピアノ独奏無言歌 "灰燼",174,662
-ブタパンチのテーマ,682,1825
-めうめうぺったんたん！！,682,847
-未完成ノ蒸氣驅動乙女,427,2010
-明滅の果てに,427,1906
-粋 -IKI-,174,1390
-彼岸花,174,1121
+Zirkfied,432,765
+アストライアの双皿,937,2163
+想い出をありがとう,1237,1465
+悲しいね,1237,2080
+C18H27NO3,937,1465
+激走！！ヤング☆ダンプ！,180,765
+限界食堂,432,1032
+恋歌疾風！かるたクイーンいろは,180,1812
+最小三倍完全数,685,1032
+ジオメトリック∮ティーパーティー,432,950
+雫,937,1383
+鎬,685,1628
+シャムシールの舞,180,2245
+ちくわパフェだよ☆ＣＫＰ,432,847
+終末を追う者,432,1708
+生命の焔纏いて,180,1383
+世界の果てに約束の凱歌を,685,1115
+世界の果てに約束の凱歌を -Advent-,180,847
+葬送のエウロパ,432,1465
+天空の夜明け,180,1895
+IX,685,2362
+西馬込交通曲,802,425
+バッドエンド・シンドローム,180,1976
+ピアノ独奏無言歌 "灰燼",180,662
+ブタパンチのテーマ,685,1895
+めうめうぺったんたん！！,685,847
+未完成ノ蒸氣驅動乙女,432,2080
+明滅の果てに,432,1976
+粋 -IKI-,180,1465
+彼岸花,180,1115
 pump up dA CORE,937,847
-天泣,937,1203`
+天泣,937,1196`
   let newCsv = csv49.trim();
   const m = new Map();
   newCsv.split('\n').map(line => {
@@ -151,13 +153,13 @@ pump up dA CORE,937,847
 
   document.body.innerHTML = `
    <body>
-   <canvas id="canvas" width="1500" height="2381">
+   <canvas id="canvas" width="1500" height="2470">
   </canvas>
   </body>
     `;
   const canvas = document.getElementById("canvas");
   const bg = new Image();
-  bg.src = "https://rawcdn.githack.com/sonohoshi/children-s-sketchbook/1daa5e221a62bc59e2c44020721c16ed3d404ac2/img/49table.png";
+  bg.src = "https://rawcdn.githack.com/sonohoshi/children-s-sketchbook/f19da58ca3a179967604d543c0e765f18461523a/img/49table.png";
   bg.crossOrigin = 'anonymous';
   bg.onload = function () {
     canvas.getContext("2d").drawImage(bg, 0, 0)
