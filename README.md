@@ -4,7 +4,7 @@ https://twitter.com/popnmusic10 에서 만드는 팝픈뮤직 서열표의 메�
 현재(2024.04.18) 기준 48/49/50 레벨을 지원합니다.
 
 코나미 베이직 코스에 가입되어 있지 않으면 곡 데이터를 가져올 수 없어 사용할 수 없습니다.
-![mychart](https://github.com/sonohoshi/children-s-sketchbook/assets/48484989/7c0290cd-917b-4966-a4f5-3b105989e5cd)
+![mychart](https://github.com/user-attachments/assets/72828e8e-3a2f-4ef2-a700-a8f2a3d21764)
 
 # 사용 방법
 
