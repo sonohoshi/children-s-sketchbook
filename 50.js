@@ -3,7 +3,7 @@ async function crawl(...levels) {
 
   console.log("popn data crawler running.\nPLZ wait a minute...");
 
-  const PLAY_DATA_URL = "https://p.eagate.573.jp/game/popn/unilab/playdata";
+  const PLAY_DATA_URL = "https://p.eagate.573.jp/game/popn/jamfizz/playdata";
   function resToText(res) {
     return res.arrayBuffer().then((buffer) => {
       if (res.headers.get("Content-Type").includes("UTF-8")) {
@@ -13,21 +13,8 @@ async function crawl(...levels) {
       }
     })
   }
-  function searchPopperz() {
-    const POP_UPPER_HYPER_URL = "https://p.eagate.573.jp/game/popn/unilab/playdata/mu_lv.html?page=3&level=46";
-    return fetch(POP_UPPER_HYPER_URL)
-      .then(resToText)
-      .then((text) => domparser.parseFromString(text, "text/html"))
-      .then((doc) => doc.querySelectorAll("ul.mu_list_table > li"))
-      .then((lis) => {
-        return Array.from(lis)
-          .filter((li) => li.firstElementChild.className.startsWith("col"))
-          .find(li => li.firstElementChild.firstElementChild.textContent == "Popperz Chronicle")
-          .firstElementChild.firstElementChild.href
-      })
-  }
 
-  function whatever(url, level, hash) {
+  function whatever(url, level) {
     return fetch(url)
       .then(resToText)
       .then((text) => domparser.parseFromString(text, "text/html"))
@@ -36,9 +23,10 @@ async function crawl(...levels) {
         return Array.from(lis)
           .filter((li) => li.firstElementChild.className.startsWith("col"))
           .map((li) => [
+            // 순서대로 점수 메달 곡제목
             li.children[3].textContent,
             li.children[3].firstChild.src,
-            `${li.firstElementChild.firstElementChild.textContent}${li.firstElementChild.firstElementChild.href == hash ? "U" : ""}`,
+            li.firstElementChild.firstElementChild.textContent,
           ])
           .map(([score, medal, song]) => {
             return {
@@ -56,10 +44,8 @@ async function crawl(...levels) {
     arr.push(...(levels.map(level => [i, level])));
   }
 
-  const popperzHash = await searchPopperz();
-  console.log(`popperzHash: ${popperzHash}`);
   const promises = arr.map(([page, level]) =>
-    whatever(`${PLAY_DATA_URL}/mu_lv.html?page=${page}&level=${level}`, level, popperzHash)
+    whatever(`${PLAY_DATA_URL}/mu_lv.html?page=${page}&version=0&category=0&keyword=&lv=${level}&sort=none&sort_type=none`, level)
   );
 
   const s = (await Promise.all(promises))

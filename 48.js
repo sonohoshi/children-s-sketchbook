@@ -3,10 +3,7 @@ async function crawl(...levels) {
 
   console.log("popn data crawler running.\nPLZ wait a minute...");
 
-  const PLAY_DATA_URL = "https://p.eagate.573.jp/game/popn/unilab/playdata";
-  const MEDAL_IMAGE_URL =
-    "https://eacache.s.konaminet.jp/game/popn/unilab/images/p/common/medal";
-
+  const PLAY_DATA_URL = "https://p.eagate.573.jp/game/popn/jamfizz/playdata";
   function resToText(res) {
     return res.arrayBuffer().then((buffer) => {
       if (res.headers.get("Content-Type").includes("UTF-8")) {
@@ -26,6 +23,7 @@ async function crawl(...levels) {
         return Array.from(lis)
           .filter((li) => li.firstElementChild.className.startsWith("col"))
           .map((li) => [
+            // 순서대로 점수 메달 곡제목
             li.children[3].textContent,
             li.children[3].firstChild.src,
             li.firstElementChild.firstElementChild.textContent,
@@ -47,7 +45,7 @@ async function crawl(...levels) {
   }
 
   const promises = arr.map(([page, level]) =>
-    whatever(`${PLAY_DATA_URL}/mu_lv.html?page=${page}&level=${level}`, level)
+    whatever(`${PLAY_DATA_URL}/mu_lv.html?page=${page}&version=0&category=0&keyword=&lv=${level}&sort=none&sort_type=none`, level)
   );
 
   const s = (await Promise.all(promises))
