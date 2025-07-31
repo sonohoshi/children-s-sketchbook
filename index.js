@@ -36,7 +36,7 @@ h4 {
 <form action="javascript: void !function(e){var t=e.createElement('script');t.type='text/javascript',t.src='///rawcdn.githack.com/sonohoshi/children-s-sketchbook/72e58d8809139a70f76c3a163be140956497d9fc/48.js',e.head.appendChild(t)}(document);">
     <input type="submit" value="48" />
 </form>
-<form action="javascript: void !function(e){var t=e.createElement('script');t.type='text/javascript',t.src='///rawcdn.githack.com/sonohoshi/children-s-sketchbook/cc26e0bb2841c0f554ddaccdd4bb8fc705360058/49.js',e.head.appendChild(t)}(document);">
+<form action="javascript: void !function(e){var t=e.createElement('script');t.type='text/javascript',t.src='///rawcdn.githack.com/sonohoshi/children-s-sketchbook/40a7615a27f39e7639a393b4a842e805a115e3aa/49.js',e.head.appendChild(t)}(document);">
     <input type="submit" value="49" />
 </form>
 <form action="javascript: void !function(e){var t=e.createElement('script');t.type='text/javascript',t.src='///rawcdn.githack.com/sonohoshi/children-s-sketchbook/72e58d8809139a70f76c3a163be140956497d9fc/50.js',e.head.appendChild(t)}(document);">
