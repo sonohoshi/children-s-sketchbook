@@ -59,13 +59,14 @@ async function render48(playData) {
   const presetX = [191, 395, 599, 804, 1009, 1286];
   const presetY = [
     403, 482, 582, 660, 739,
-    818, 897, 997, 1076, 1155,
-    1234, 1313, 1392, 1471, 1569,
-    1648, 1727, 1806, 1885, 1964,
-    2043, 2141, 2220, 2299, 2378,
-    2476, 2555, 2634, 2713, 2811,
-  ];
+    818, 895, 1072, 1151, 1230,
+    1309, 1388, 1467, 1546, 1644,
+    1723, 1802, 1881, 1960, 2039,
+    2118, 2294, 2372, 2451, 2530, 
+    2708, 2787, 2866, 2945, 3044,
 
+    974, 2197, 2609, 3123
+  ];
   const songData = [
     {
       song: "Aithon",
@@ -791,35 +792,103 @@ async function render48(playData) {
       song: "ホーンテッド★メイドランチ",
       posX: presetX[1],
       posY: presetY[6],
-    }
-    /* TODO: 서열표 업데이트 시 좌표입력 후 지우기
+    },
     {
       song: "少年A",
-      posX: 0,
-      posY: 0
+      posX: presetX[2],
+      posY: presetY[13],
     },
     {
       song: "Dragon Blade -The Arrange-",
-      posX: 0,
-      posY: 0,
+      posX: presetX[4],
+      posY: presetY[6],
     },
     {
       song: "遊戯大熊猫",
-      posX: 0,
-      posY: 0
+      posX: presetX[3],
+      posY: presetY[13],
     },
     {
       song: "ただ、それだけの理由で",
-      posX: 0,
-      posY: 0,
-    }
-    */
+      posX: presetX[1],
+      posY: presetY[20],
+    },
+    {
+      song: "ミラクル☆喫茶",
+      posX: presetX[2],
+      posY: presetY[30],
+    },
+    {
+      song: "The Metalist",
+      posX: presetX[0],
+      posY: presetY[30],
+    },
+    {
+      song: "Jazz is Rad",
+      posX: presetX[1],
+      posY: presetY[30],
+    },
+    {
+      song: "Yum Yum OYACHU",
+      posX: presetX[5],
+      posY: presetY[11],
+    },
+    {
+      song: "Hold the Pickles!!",
+      posX: presetX[4],
+      posY: presetY[13],
+    },
+    {
+      song: "encounter",
+      posX: presetX[2],
+      posY: presetY[20],
+    },
+    {
+      song: "なまいきプリンセス",
+      posX: presetX[3],
+      posY: presetY[20],
+    },
+    {
+      song: "POLꞰAMAИIA",
+      posX: presetX[4],
+      posY: presetY[20],
+    },
+    {
+      song: "Primitive Whimsical Chopped Salad",
+      posX: presetX[0],
+      posY: presetY[31],
+    },
+    {
+      song: "夜虹",
+      posX: presetX[0],
+      posY: presetY[32],
+    },
+    {
+      song: "Knockin' on Red Button",
+      posX: presetX[1],
+      posY: presetY[32],
+    },
+    {
+      song: "TYPHØN",
+      posX: presetX[2],
+      posY: presetY[28],
+    },
+    {
+      song: "Flower-Band ver.-",
+      posX: presetX[3],
+      posY: presetY[28],
+    },
+    {
+      song: "閉塞的フレーション",
+      posX: presetX[0],
+      posY: presetY[33],
+    },
   ];
 
   function initBodyElement() {
     document.body.innerHTML = `
       <body>
-        <canvas id="canvas" width="1500" height="2894">
+        <canvas id="canvas" width="1500" height="3189">
         </canvas>
       </body>
     `;
@@ -833,7 +902,7 @@ async function render48(playData) {
       if (xy) {
         var img = new Image();
         img.onload = function () {
-          ctx.drawImage(img, xy.posX - 20, xy.posY - 20, 40, 40)
+          ctx.drawImage(img, xy.posX - 20, xy.posY - 20, 38, 38)
         }
         img.src = element.medal;
       }
@@ -843,7 +912,7 @@ async function render48(playData) {
   function drawTable() {
     const canvas = document.getElementById("canvas");
     const bg = new Image();
-    bg.src = "https://rawcdn.githack.com/sonohoshi/children-s-sketchbook/96906144d80d0dc758520853a421eee62d10777b/img/48table.png";
+    bg.src = "https://raw.githack.com/sonohoshi/children-s-sketchbook/250731-48/img/48table.png";
     bg.crossOrigin = 'anonymous';
     bg.onload = function () {
       canvas.getContext("2d").drawImage(bg, 0, 0)
