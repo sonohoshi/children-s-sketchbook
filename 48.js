@@ -59,13 +59,12 @@ async function render48(playData) {
   const presetX = [191, 395, 599, 804, 1009, 1286];
   const presetY = [
     403, 482, 582, 660, 739,
-    818, 897, 997, 1076, 1155,
-    1234, 1313, 1392, 1471, 1569,
-    1648, 1727, 1806, 1885, 1964,
-    2043, 2141, 2220, 2299, 2378,
-    2476, 2555, 2634, 2713, 2811,
+    818, 897, 1072, 1151, 1230,
+    1309, 1388, 1467, 1546, 1644,
+    1723, 1802, 1881, 1960, 2039,
+    2193, 2294, 2372, 2451, 2530,
+    2708, 2787, 2866, 2945, 3044,
   ];
-
   const songData = [
     {
       song: "Aithon",
@@ -819,7 +818,7 @@ async function render48(playData) {
   function initBodyElement() {
     document.body.innerHTML = `
       <body>
-        <canvas id="canvas" width="1500" height="2894">
+        <canvas id="canvas" width="1500" height="3189">
         </canvas>
       </body>
     `;
@@ -833,7 +832,7 @@ async function render48(playData) {
       if (xy) {
         var img = new Image();
         img.onload = function () {
-          ctx.drawImage(img, xy.posX - 20, xy.posY - 20, 40, 40)
+          ctx.drawImage(img, xy.posX - 20, xy.posY - 20, 38, 38)
         }
         img.src = element.medal;
       }
@@ -843,7 +842,7 @@ async function render48(playData) {
   function drawTable() {
     const canvas = document.getElementById("canvas");
     const bg = new Image();
-    bg.src = "https://rawcdn.githack.com/sonohoshi/children-s-sketchbook/96906144d80d0dc758520853a421eee62d10777b/img/48table.png";
+    bg.src = "https://raw.githack.com/sonohoshi/children-s-sketchbook/250731-48/img/48table.png";
     bg.crossOrigin = 'anonymous';
     bg.onload = function () {
       canvas.getContext("2d").drawImage(bg, 0, 0)
