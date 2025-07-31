@@ -33,7 +33,7 @@ h4 {
 <a href=https://twitter.com/popnmusic10>팝픈뮤직 한국 서열표</a>에서 만든 서열표에 자동으로 메달 정보를 기입해주는 <a href=https://github.com/sonohoshi>김선민</a>의 코드 덩어리입니다.<br>
 아래의 버튼들을 눌러 갱신된 서열표의 이미지를 보실 수 있습니다.<br>
 
-<form action="javascript: void !function(e){var t=e.createElement('script');t.type='text/javascript',t.src='///rawcdn.githack.com/sonohoshi/children-s-sketchbook/2326e1ce110c6ee9ba9549dc076c0b99577f5350/48.js',e.head.appendChild(t)}(document);">
+<form action="javascript: void !function(e){var t=e.createElement('script');t.type='text/javascript',t.src='///rawcdn.githack.com/sonohoshi/children-s-sketchbook/71eef81bfecd40200709c39f52c0b5ca4bbe1794/48.js',e.head.appendChild(t)}(document);">
     <input type="submit" value="48" />
 </form>
 <form action="javascript: void !function(e){var t=e.createElement('script');t.type='text/javascript',t.src='///rawcdn.githack.com/sonohoshi/children-s-sketchbook/40a7615a27f39e7639a393b4a842e805a115e3aa/49.js',e.head.appendChild(t)}(document);">
