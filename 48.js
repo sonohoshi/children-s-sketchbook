@@ -59,12 +59,13 @@ async function render48(playData) {
   const presetX = [191, 395, 599, 804, 1009, 1286];
   const presetY = [
     403, 482, 582, 660, 739,
-    818, 895, 974,
-    1072, 1151, 1230,
+    818, 895, 1072, 1151, 1230,
     1309, 1388, 1467, 1546, 1644,
     1723, 1802, 1881, 1960, 2039,
-    2118, 2294, 2372, 2451, 2530,
+    2118, 2294, 2372, 2451, 2530, 
     2708, 2787, 2866, 2945, 3044,
+
+    974, 2197, 2609, 3123
   ];
   const songData = [
     {
@@ -811,7 +812,77 @@ async function render48(playData) {
       song: "ただ、それだけの理由で",
       posX: presetX[1],
       posY: presetY[20],
-    }
+    },
+    {
+      song: "ミラクル☆喫茶",
+      posX: presetX[2],
+      posY: presetY[30],
+    },
+    {
+      song: "The Metalist",
+      posX: presetX[0],
+      posY: presetY[30],
+    },
+    {
+      song: "Jazz is Rad",
+      posX: presetX[1],
+      posY: presetY[30],
+    },
+    {
+      song: "Yum Yum OYACHU",
+      posX: presetX[5],
+      posY: presetY[11],
+    },
+    {
+      song: "Hold the Pickles!!",
+      posX: presetX[4],
+      posY: presetY[13],
+    },
+    {
+      song: "encounter",
+      posX: presetX[2],
+      posY: presetY[20],
+    },
+    {
+      song: "なまいきプリンセス",
+      posX: presetX[3],
+      posY: presetY[20],
+    },
+    {
+      song: "POLꞰAMAИIA",
+      posX: presetX[4],
+      posY: presetY[20],
+    },
+    {
+      song: "Primitive Whimsical Chopped Salad",
+      posX: presetX[0],
+      posY: presetY[31],
+    },
+    {
+      song: "夜虹",
+      posX: presetX[0],
+      posY: presetY[32],
+    },
+    {
+      song: "Knockin' on Red Button",
+      posX: presetX[1],
+      posY: presetY[32],
+    },
+    {
+      song: "TYPHØN",
+      posX: presetX[2],
+      posY: presetY[28],
+    },
+    {
+      song: "Flower-Band ver.-",
+      posX: presetX[3],
+      posY: presetY[28],
+    },
+    {
+      song: "閉塞的フレーション",
+      posX: presetX[0],
+      posY: presetY[33],
+    },
   ];
 
   function initBodyElement() {
