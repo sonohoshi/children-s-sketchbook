@@ -59,10 +59,11 @@ async function render48(playData) {
   const presetX = [191, 395, 599, 804, 1009, 1286];
   const presetY = [
     403, 482, 582, 660, 739,
-    818, 897, 1072, 1151, 1230,
+    818, 895, 974,
+    1072, 1151, 1230,
     1309, 1388, 1467, 1546, 1644,
     1723, 1802, 1881, 1960, 2039,
-    2193, 2294, 2372, 2451, 2530,
+    2118, 2294, 2372, 2451, 2530,
     2708, 2787, 2866, 2945, 3044,
   ];
   const songData = [
@@ -790,29 +791,27 @@ async function render48(playData) {
       song: "ホーンテッド★メイドランチ",
       posX: presetX[1],
       posY: presetY[6],
-    }
-    /* TODO: 서열표 업데이트 시 좌표입력 후 지우기
+    },
     {
       song: "少年A",
-      posX: 0,
-      posY: 0
+      posX: presetX[2],
+      posY: presetY[13],
     },
     {
       song: "Dragon Blade -The Arrange-",
-      posX: 0,
-      posY: 0,
+      posX: presetX[4],
+      posY: presetY[6],
     },
     {
       song: "遊戯大熊猫",
-      posX: 0,
-      posY: 0
+      posX: presetX[3],
+      posY: presetY[13],
     },
     {
       song: "ただ、それだけの理由で",
-      posX: 0,
-      posY: 0,
+      posX: presetX[1],
+      posY: presetY[20],
     }
-    */
   ];
 
   function initBodyElement() {
