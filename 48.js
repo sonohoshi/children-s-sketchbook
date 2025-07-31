@@ -912,7 +912,7 @@ async function render48(playData) {
   function drawTable() {
     const canvas = document.getElementById("canvas");
     const bg = new Image();
-    bg.src = "https://raw.githack.com/sonohoshi/children-s-sketchbook/250731-48/img/48table.png";
+    bg.src = "https://raw.githack.com/sonohoshi/children-s-sketchbook/main/img/48table.png";
     bg.crossOrigin = 'anonymous';
     bg.onload = function () {
       canvas.getContext("2d").drawImage(bg, 0, 0)

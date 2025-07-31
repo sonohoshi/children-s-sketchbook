@@ -12,7 +12,7 @@ https://twitter.com/popnmusic10 에서 만드는 팝픈뮤직 서열표의 메�
 1. 다음의 스크립트를 북마크에 추가해 주세요.
 
 ```
-javascript: void !function(e){var t=e.createElement("script");t.type="text/javascript",t.src="///rawcdn.githack.com/sonohoshi/children-s-sketchbook/release/index.js",e.head.appendChild(t)}(document);
+javascript: void !function(e){var t=e.createElement("script");t.type="text/javascript",t.src="///raw.githack.com/sonohoshi/children-s-sketchbook/release/index.js",e.head.appendChild(t)}(document);
 ```
 
 <img width="713" alt="스크린샷 2024-04-17 오전 1 24 50" src="https://github.com/sonohoshi/children-s-sketchbook/assets/48484989/16247018-adc1-4f73-9daa-8227515c18ef">
