@@ -159,7 +159,7 @@ pump up dA CORE,937,847
     `;
   const canvas = document.getElementById("canvas");
   const bg = new Image();
-  bg.src = "https://rawcdn.githack.com/sonohoshi/children-s-sketchbook/f19da58ca3a179967604d543c0e765f18461523a/img/49table.png";
+  bg.src = "https://rawcdn.githack.com/sonohoshi/children-s-sketchbook/64d78c4ac6d4adbbe08079ef13dc7d11d4e947d5/img/49table.png";
   bg.crossOrigin = 'anonymous';
   bg.onload = function () {
     canvas.getContext("2d").drawImage(bg, 0, 0)
