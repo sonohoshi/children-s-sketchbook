@@ -4,7 +4,7 @@ https://twitter.com/popnmusic10 에서 만드는 팝픈뮤직 서열표의 메�
 현재(2024.04.18) 기준 48/49/50 레벨을 지원합니다.
 
 코나미 베이직 코스에 가입되어 있지 않으면 곡 데이터를 가져올 수 없어 사용할 수 없습니다.
-<img width="1500" height="2470" alt="image" src="https://github.com/user-attachments/assets/21e116d2-4c8d-42b1-832e-a03a2c7bbbe0" />
+<img width="1500" height="2470" alt="image" src="https://github.com/user-attachments/assets/7a84d5eb-1a5e-4af5-99a5-3fcddc88e913" />
 
 
 # 사용 방법
